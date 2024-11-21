@@ -1,0 +1,19 @@
+import turtle
+t=turtle.Pen()
+
+class square():
+    def __init__(self,l):
+        self.length=l
+
+
+    def a(self):
+        return (self.length*self.length)
+    def b(self):
+        for i in range(0,4):
+            t.pencolor('blue')
+            t.fd(self.length)
+            t.lt(90)
+
+newsquare=square(100)
+print(newsquare.a())
+newsquare.b()
